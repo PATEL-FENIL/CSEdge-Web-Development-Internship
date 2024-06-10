@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligthbox-Enabled Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+body{
+    background: whitesmoke;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+.gallery a{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+.gallery a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery a img:hover{
+    transform: scale(1.4);
+}
+h1{
+    font-size: 50px;
+    margin-top: 10;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <a href="1.jpg"><img src="1.jpg" alt=""></a>
+
+        <a href="2.jpg"><img src="2.jpg" alt=""></a>
+
+        <a href="3.jpg"><img src="3.jpg" alt=""></a>
+
+        <a href="4.jpg"><img src="4.jpg" alt=""></a>
+
+        <a href="5.jpg"><img src="5.jpg" alt=""></a>
+
+        <a href="6.jpg"><img src="6.jpg" alt=""></a>
+
+        <a href="7.jpg"><img src="7.jpg" alt=""></a>
+
+        <a href="8.jpg"><img src="8.jpg" alt=""></a>
+
+        <a href="9.jpg"><img src="9.jpg" alt=""></a>
+
+        <a href="10.jpg"><img src="10.jpg" alt=""></a>
+
+        <a href="11.jpg"><img src="11.jpg" alt=""></a>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallery'));
+    </script>
+</body>
+</html>
